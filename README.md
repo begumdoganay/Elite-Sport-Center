@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 Elite Sport Center - React Projesi
 Bu proje, bir spor merkezi web sitesinin React ile yeniden yapılandırılmış versiyonudur. Orijinal HTML/CSS/JavaScript yapısını modern ve komponent tabanlı bir React mimarisine dönüştürülmüştür.
 Proje Özellikleri
@@ -109,4 +107,3 @@ Responsive tasarıma uyumludur
 
 
 © 2025 Elite Sport Center. Tüm hakları saklıdır.
-
