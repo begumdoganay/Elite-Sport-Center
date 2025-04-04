@@ -1,109 +1,225 @@
-Elite Sport Center - React Projesi
-Bu proje, bir spor merkezi web sitesinin React ile yeniden yapılandırılmış versiyonudur. Orijinal HTML/CSS/JavaScript yapısını modern ve komponent tabanlı bir React mimarisine dönüştürülmüştür.
-Proje Özellikleri
+# 🏋️‍♂️ Elite Sport Center - React Projesi
 
-Komponent bazlı yapı
-State yönetimi için React hooks
-CSS modülleri ile stil yönetimi
-Animasyonlar ve geçiş efektleri
-Responsive tasarım
-Form işlemleri
-Modal bileşenleri
-Dinamik içerik gösterimi
+Bu proje, **Elite Sport Center** adlı spor merkezi web sitesinin **React.js** kullanılarak yeniden geliştirilmiş versiyonudur. Modern yapısı, modülerliği ve responsive tasarımıyla kullanıcı dostu bir deneyim sunmayı amaçlamaktadır.
 
-Kurulum
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
-bashCopy# Repoyu klonlayın
-git clone <repo-url>
+---
 
-# Proje dizinine gidin
+## 📚 İçindekiler
+
+- [Proje Hakkında](#proje-hakkında)
+- [Kurulum](#kurulum)
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Proje Yapısı](#proje-yapısı)
+- [Komponentler](#komponentler)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
+
+---
+
+## 🚀 Proje Hakkında
+
+Bu proje, geleneksel HTML/CSS/JavaScript ile hazırlanmış olan **Elite Sport Center** web sitesinin, modern web geliştirme standartlarına uygun olarak **React.js** ile yeniden yazılmış versiyonudur.
+
+- Her sayfa en az 3 adet React komponenti içerir.
+- Responsive (mobil uyumlu) tasarım korunmuştur.
+- CSS Modules ile stiller komponent bazlı ayrıştırılmıştır.
+- Sayfa geçişleri, animasyonlar ve tüm işlevsellikler korunmuştur.
+
+---
+
+## ⚙️ Kurulum
+
+Projeyi yerel geliştirme ortamınızda çalıştırmak için şu adımları takip edebilirsiniz:
+
+```bash
+# Proje deposunu klonlayın
+git clone https://github.com/kullaniciadi/elite-sport-center.git
+
+# Proje klasörüne girin
 cd elite-sport-center
 
-# Bağımlılıkları yükleyin
+# Gerekli bağımlılıkları yükleyin
 npm install
 
-# Geliştirme sunucusunu başlatın
+# Uygulamayı başlatın
 npm start
-Tarayıcınızda http://localhost:3000 adresine giderek uygulamayı görüntüleyebilirsiniz.
-Proje Yapısı
-Copysrc/
-├── assets/
-│   └── images/       # Proje görselleri
-├── components/       # React bileşenleri
-│   ├── Blog/         # Blog bölümü bileşenleri
-│   ├── Calculator/   # Hesaplayıcı bileşenleri
-│   ├── Classes/      # Sınıflar bölümü bileşenleri
-│   ├── Contact/      # İletişim bölümü bileşenleri
-│   ├── Equipment/    # Ekipman bölümü bileşenleri
-│   ├── FAQ/          # SSS bölümü bileşenleri
-│   ├── Footer/       # Alt kısım bileşeni
-│   ├── Header/       # Üst kısım bileşenleri
-│   ├── Membership/   # Üyelik bölümü bileşenleri
-│   ├── Modals/       # Modal pencere bileşenleri
-│   ├── Nutrition/    # Beslenme bölümü bileşenleri
-│   ├── SuccessStories/ # Başarı hikayeleri bileşenleri
-│   ├── Testimonials/ # Müşteri yorumları bileşenleri
-│   ├── Trainers/     # Eğitmenler bölümü bileşenleri
-│   └── UI/           # Genel UI bileşenleri
-├── App.js            # Ana uygulama bileşeni
-└── index.js          # Uygulama giriş noktası
-Kullanılan Teknolojiler
+Uygulama, tarayıcınızda http://localhost:3000 adresinde çalışacaktır.
 
-React.js
-CSS3
-React Hooks
-React Intersection Observer
-React CountUp
-Font Awesome
-Google Fonts
-
-Komponet Yapısı
-Her bölüm için en az 3 komponent kullanılarak modüler bir yapı oluşturulmuştur:
-
-Header Bölümü:
-
-Navbar
-HeroSection
-StatCards
-
-
-Classes Bölümü:
-
-ClassesHeader
-ClassTabs
-ClassInfo
+🛠️ Kullanılan Teknolojiler
+Teknoloji	Açıklama
+React.js	UI geliştirme kütüphanesi
+React Router	Sayfa geçişleri için yönlendirme sistemi
+React Hooks	Fonksiyonel komponentlerde state ve lifecycle yönetimi
+CSS Modules	Komponent bazlı stiller
+Font Awesome	İkon kütüphanesi
+React Intersection Observer	Scroll animasyonları için
+React CountUp	Sayısal animasyon efektleri için
+📁 Proje Yapısı
+bash
+Copy
+Edit
+##
+elite-sport-center/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   ├── Blog/
+│   │   ├── Calculator/
+│   │   ├── Classes/
+│   │   ├── Contact/
+│   │   ├── Equipment/
+│   │   ├── FAQ/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Membership/
+│   │   ├── Modals/
+│   │   ├── Nutrition/
+│   │   ├── SuccessStories/
+│   │   ├── Testimonials/
+│   │   ├── Trainers/
+│   │   └── UI/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+├── README.md
+└── .gitignore
 
 
-Calculator Bölümü:
+##
 
-BMICalculator
-CalorieCalculator
-BodyFatCalculator
-MacroCalculator
+🧩 Komponentler
+🔹 Header
+Navbar: Gezinme menüsü
 
+HeroSection: Giriş bölümü ve slider
 
-Trainers Bölümü:
+StatCards: Sayısal istatistikler
 
-TrainersHeader
-TrainerList
-TrainerCard
+🔹 Classes
+ClassesHeader: Başlık bölümü
 
+ClassTabs: Sınıf sekmeleri
 
-Equipment Bölümü:
+ClassInfo: Sınıf detayları
 
-EquipmentHeader
-ProductList
-ProductCard
+🔹 Calculator
+BMICalculator: Vücut kitle indeksi hesaplayıcı
 
+CalorieCalculator: Kalori hesaplayıcı
 
+BodyFatCalculator: Yağ oranı hesaplayıcı
 
-Ve diğer bölümler...
-Notlar
+MacroCalculator: Makro besin hesaplayıcı
 
-Orjinal websitesinin tüm işlevselliği korunmuştur
-Sayfa yükleyici ve animasyonlar eklenmiştir
-Formuler istekleri simüle edilmektedir
-Responsive tasarıma uyumludur
+🔹 Trainers
+TrainersHeader: Başlık
 
+TrainerList: Eğitmen listesi
 
-© 2025 Elite Sport Center. Tüm hakları saklıdır.
+TrainerCard: Eğitmen kartı
+
+🔹 Equipment
+EquipmentHeader: Başlık
+
+ProductList: Ürün listesi
+
+ProductCard: Ürün kartı
+
+🔹 Testimonials
+TestimonialsHeader: Müşteri görüşleri başlığı
+
+TestimonialSlider: Slider bileşeni
+
+TestimonialCard: Müşteri kartı
+
+🔹 Contact
+ContactHeader: İletişim başlığı
+
+ContactForm: Form bileşeni
+
+ContactInfo: İletişim bilgileri
+
+Map: Google Maps entegrasyonu
+
+🔹 Membership
+MembershipHeader: Başlık
+
+PlansList: Üyelik planları listesi
+
+PlanCard: Üyelik kartı
+
+🔹 Blog
+BlogHeader: Blog başlığı
+
+BlogList: Blog yazıları
+
+BlogCard: Blog içeriği kartı
+
+🔹 Success Stories
+SuccessStoriesHeader: Başarı hikayeleri başlığı
+
+StoriesList: Hikaye listesi
+
+StoryCard: Bireysel hikaye kartı
+
+🔹 Nutrition
+NutritionHeader: Beslenme başlığı
+
+NutritionTabs: Sekmeli yapı
+
+NutritionProgram: Program içeriği
+
+NutritionTestimonial: Müşteri yorumu
+
+🔹 FAQ
+FAQHeader: Sıkça sorulan sorular başlığı
+
+FAQList: Soru listesi
+
+FAQItem: Tekil soru bileşeni
+
+🔹 Modals
+ReservationModal: Sınıf rezervasyonu
+
+MembershipModal: Üyelik kayıt
+
+CartModal: Sepet
+
+🔹 UI
+Loader: Yükleniyor animasyonu
+
+Notification: Bildirimler
+
+BackToTop: Yukarı çık butonu
+
+ThemeSwitcher: Tema değiştirici (dark/light)
+
+## 🤝 Katkıda Bulunma
+Bu projeye katkıda bulunmak için aşağıdaki adımları izleyebilirsiniz:
+
+Bu repoyu forklayın
+
+Yeni bir özellik dalı oluşturun:
+
+bash
+Copy
+Edit
+git checkout -b feature/YeniOzellik
+Değişikliklerinizi commit edin:
+
+bash
+Copy
+Edit
+git commit -m "Yeni özellik: Açıklama"
+Değişikliklerinizi gönderin:
+
+bash
+Copy
+Edit
+git push origin feature/YeniOzellik
