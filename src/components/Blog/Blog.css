@@ -1,0 +1,35 @@
+
+
+.blog {
+    background-color: #f1f8ff;
+    padding: 5%;
+  }
+  
+  .blog-more {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .view-all-btn {
+    display: inline-block;
+    background-color: #315592;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-all-btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #faa51b;
+  }
+  
+  .view-all-btn:hover i {
+    transform: translateX(5px);
+  }

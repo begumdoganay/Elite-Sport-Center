@@ -1,0 +1,59 @@
+/* TestimonialCard.css */
+.client-main {
+    width: 100%;
+  }
+  
+  .nd-client {
+    display: flex;
+  }
+  
+  .nd-client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .client-info h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  
+  .client-info p {
+    font-size: 10px;
+    font-weight: bold;
+    color: #040404;
+  }
+  
+  .comment {
+    position: relative;
+    letter-spacing: 0.2px;
+    background-color: #355592;
+    margin-top: 20px;
+    color: #fefefe;
+    padding: 15px;
+    font-size: 12px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .comment::before,
+  .comment::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .comment::before {
+    top: -10px;
+    left: 20px;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #355592 transparent;
+  }

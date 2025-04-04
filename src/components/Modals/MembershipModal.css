@@ -1,0 +1,353 @@
+/* MembershipModal.css */
+.membership-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .membership-content {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+  }
+  
+  .membership-header {
+    background-color: #315592;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .membership-header h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  #close-membership {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .membership-body {
+    padding: 30px;
+  }
+  
+  .membership-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    position: relative;
+  }
+  
+  .step-number {
+    width: 35px;
+    height: 35px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .step.active .step-number {
+    background-color: #faa51b;
+    color: white;
+  }
+  
+  .step-line {
+    height: 3px;
+    background-color: #f1f1f1;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .form-step {
+    display: none;
+  }
+  
+  .form-step.active {
+    display: block;
+    animation: fadeIn 0.5s;
+  }
+  
+  .form-step h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .next-step,
+  .prev-step,
+  .submit-btn {
+    background-color: #315592;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-step:hover,
+  .prev-step:hover,
+  .submit-btn:hover {
+    background-color: #faa51b;
+  }
+  
+  .prev-step {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .prev-step:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .submit-btn {
+    background-color: #2ecc71;
+  }
+  
+  .submit-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .membership-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .membership-option {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .membership-option input[type="radio"] {
+    display: none;
+  }
+  
+  .membership-label {
+    display: block;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .membership-option input[type="radio"]:checked + .membership-label {
+    border-color: #315592;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-tag {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #faa51b;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .plan-name {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .plan-name h5 {
+    font-size: 18px;
+    margin: 0;
+    color: #315592;
+  }
+  
+  .plan-price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .plan-price small {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .plan-features li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .plan-features i {
+    width: 20px;
+    margin-right: 8px;
+  }
+  
+  .plan-features i.fa-check {
+    color: #2ecc71;
+  }
+  
+  .plan-features i.fa-xmark {
+    color: #e74c3c;
+  }
+  
+  .payment-info h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .payment-method {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-method:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .payment-method input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .payment-method span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .payment-method i {
+    font-size: 20px;
+  }
+  
+  .terms {
+    margin-top: 20px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .checkbox-label input {
+    margin-top: 3px;
+  }
+  
+  .checkbox-label a {
+    color: #315592;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .membership-content {
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    
+    .membership-body {
+      padding: 20px;
+    }
+    
+    .step-text {
+      display: none;
+    }
+    
+    .membership-options {
+      flex-direction: column;
+    }
+    
+    .membership-option {
+      width: 100%;
+    }
+    
+    .payment-methods {
+      flex-direction: column;
+    }
+    
+    .form-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

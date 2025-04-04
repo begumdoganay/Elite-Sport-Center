@@ -1,0 +1,75 @@
+/* ReservationModal.css */
+.reservation-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reservation-content {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reservation-header {
+    background-color: #315592;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reservation-header h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  #close-reservation {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .reservation-body {
+    padding: 20px;
+  }
+  
+  .class-info {
+    margin-bottom: 20px;
+  }
+  
+  .class-info h4 {
+    font-size: 18px;
+    color: #315592;
+  }
+  
+  .reserve-btn {
+    background-color: #315592;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reserve-btn:hover {
+    background-color: #faa51b;
+  }

@@ -1,0 +1,38 @@
+/* SuccessStories.css */
+.success-stories {
+    background-color: #ffffff;
+    padding: 5%;
+  }
+  
+  .story-cta {
+    text-align: center;
+    margin-top: 60px;
+    background-color: #315592;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .story-cta h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .start-journey-btn {
+    background-color: #faa51b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .start-journey-btn:hover {
+    background-color: #e69417;
+    transform: scale(1.05);
+  }

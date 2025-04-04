@@ -1,0 +1,44 @@
+/* BMICalculator.css */
+.calculator-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .calculator-input input {
+    width: 80%;
+    height: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid #242323;
+    font-size: 15px;
+  }
+  
+  .calculator-input label {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+  
+  #btn-calculate {
+    background-color: #faa51b;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px solid #faa51b;
+    color: #fefefe;
+  }
+  
+  #btn-calculate:hover {
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .calculator-input {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }

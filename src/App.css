@@ -1,0 +1,86 @@
+/* ====================================
+   Elite Sport Center - Ana Stil Dosyası
+   Version: 1.0.0
+==================================== */
+
+/* Global Stiller ve Değişkenler */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 60%;
+}
+
+/* Scroll Animasyonları */
+.scroll-animation {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.fade-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.fade-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.zoom-in.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

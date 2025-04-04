@@ -1,0 +1,24 @@
+
+    .nutrition h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .nutrition h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .nutrition p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+.nutrition {
+    background-color: #f1f8ff;
+    padding: 5%;
+  }
+  
+  .nutrition-container {
+    margin-top: 50px;
+  }

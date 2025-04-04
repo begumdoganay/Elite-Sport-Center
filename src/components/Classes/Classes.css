@@ -1,0 +1,9 @@
+/* Classes.css */
+.classes {
+    width: 100%;
+  }
+  
+  .top-classes {
+    background: linear-gradient(80deg, #ffffff 45%, #f6f6f6 0%);
+    padding: 5%;
+  }

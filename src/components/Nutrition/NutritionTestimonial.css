@@ -1,0 +1,59 @@
+/* NutritionTestimonial.css */
+.nutrition-testimonial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .quote-icon {
+    font-size: 40px;
+    color: #faa51b;
+    margin-bottom: 20px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .quote-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quote-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .quote-author h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #315592;
+  }
+  
+  .quote-author p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 0;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .nutrition-testimonial {
+      padding: 25px;
+      width: 90%;
+    }
+  }

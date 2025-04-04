@@ -1,0 +1,59 @@
+
+    
+.testimonial-slider {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .testimonial-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonial-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .testimonial-prev,
+  .testimonial-next {
+    background-color: #315592;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimonial-prev:hover,
+  .testimonial-next:hover {
+    background-color: #faa51b;
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .testimonial-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimonial-dot.active {
+    background-color: #315592;
+  }

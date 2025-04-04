@@ -1,0 +1,9 @@
+
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }

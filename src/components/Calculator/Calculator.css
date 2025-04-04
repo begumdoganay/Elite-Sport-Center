@@ -1,0 +1,112 @@
+/* Calculator.css */
+.bottom-classes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 5%;
+  }
+  
+  .calculator {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calculator h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #315592;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .calculator p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: justify;
+  }
+  
+  .calculator-img {
+    margin-top: 60px;
+    position: relative;
+  }
+  
+  .arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 100%;
+    left: 14%;
+    transition: left 0.5s ease;
+  }
+  
+  /* Fitness Calculators Styles */
+  .calculator-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .calc-tab {
+    background-color: #e1eeff;
+    color: #315592;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .calc-tab.active {
+    background-color: #315592;
+    color: white;
+  }
+  
+  .calc-tab:hover:not(.active) {
+    background-color: #d0e3ff;
+  }
+  
+  .calc-content {
+    display: none;
+    animation: fadeIn 0.5s;
+  }
+  
+  .calc-content.active {
+    display: block;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .bottom-classes {
+      flex-direction: column;
+      width: 90%;
+      padding: 30px 0;
+    }
+    
+    .calculator-img {
+      width: 100%;
+      margin: 40px auto 0;
+    }
+    
+    .calc-img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .calculator-tabs {
+      justify-content: center;
+    }
+    
+    .calc-tab {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  }

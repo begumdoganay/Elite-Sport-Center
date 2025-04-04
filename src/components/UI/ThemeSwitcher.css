@@ -1,0 +1,48 @@
+/* ThemeSwitcher.css */
+.theme-switcher {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99;
+  }
+  
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: #315592;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #faa51b;
+  }
+  
+  .theme-switcher.dark-mode .theme-toggle {
+    background-color: #faa51b;
+  }
+  
+  /* CSS variables for light theme */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #315592;
+    --secondary-color: #faa51b;
+    --accent-color: #e1eeff;
+  }
+  
+  /* CSS variables for dark theme */
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f1f1f1;
+    --primary-color: #3a6ab5;
+    --secondary-color: #fbb541;
+    --accent-color: #2c3e50;
+  }

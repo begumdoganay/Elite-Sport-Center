@@ -1,0 +1,21 @@
+
+.map {
+    width: 40%;
+  }
+  
+  .map iframe {
+    width: 90%;
+    height: 400px;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .map {
+      width: auto;
+      padding: 5%;
+    }
+    
+    .map iframe {
+      width: 100%;
+    }
+  }

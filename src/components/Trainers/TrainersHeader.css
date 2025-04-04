@@ -1,0 +1,39 @@
+/* TrainersHeader.css */
+.trainer-section {
+    width: 60%;
+    margin: auto;
+  }
+  
+  .trainer-section h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #315592;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .trainer-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 7px;
+    background-color: #faa51b;
+    border-radius: 10px;
+  }
+  
+  .trainer-section p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .trainer-section {
+      width: 90%;
+    }
+  }

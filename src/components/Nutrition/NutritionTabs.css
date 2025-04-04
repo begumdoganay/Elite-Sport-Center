@@ -1,0 +1,36 @@
+/* NutritionTabs.css */
+.nutrition-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .tab-btn {
+    background-color: #e1eeff;
+    color: #315592;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    background-color: #315592;
+    color: white;
+  }
+  
+  .tab-btn:hover:not(.active) {
+    background-color: #d0e3ff;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .tab-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }

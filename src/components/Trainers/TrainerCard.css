@@ -1,0 +1,107 @@
+
+    
+.trainer-card {
+    border: 2px solid #faa51b;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    z-index: 0;
+  }
+  
+  .line {
+    position: absolute;
+    top: -12px;
+    left: 100px;
+    width: 100px;
+    height: 372px;
+    background-color: #315592;
+    z-index: -1;
+  }
+  
+  .line-2 {
+    position: absolute;
+    top: 110px;
+    left: -10px;
+    width: 318px;
+    height: 100px;
+    background-color: #315592;
+    z-index: -1;
+  }
+  
+  .line-3 {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    width: 280px;
+    height: 70px;
+    background-color: #315592;
+    opacity: 0;
+  }
+  
+  .trainer-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .trainer-layer {
+    position: absolute;
+    top: 230px;
+    width: 70%;
+    height: 110px;
+    left: 15%;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    border: 1px solid #315592;
+    background-color: #315592;
+    z-index: 1;
+  }
+  
+  .trainer-card:hover .trainer-layer {
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .trainer-card .line-2 {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .trainer-card:hover .line-2 {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  
+  .trainer-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+  
+  .trainer-layer h4 {
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .trainer-layer p {
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .trainer-card {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .trainer-card img:hover {
+      scale: 1.5;
+      opacity: 0.3;
+    }
+  }

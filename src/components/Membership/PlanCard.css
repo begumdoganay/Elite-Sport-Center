@@ -1,0 +1,131 @@
+/* PlanCard.css */
+.plan-card {
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .featured {
+    border: 2px solid #faa51b;
+    transform: scale(1.05);
+  }
+  
+  .featured:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  .plan-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #faa51b;
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .plan-header {
+    background-color: #315592;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .plan-header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .price span {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .plan-features {
+    padding: 30px 20px;
+    background-color: white;
+  }
+  
+  .plan-features ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plan-features li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .plan-features i {
+    margin-right: 10px;
+    width: 20px;
+  }
+  
+  .fa-check {
+    color: #2ecc71;
+  }
+  
+  .fa-xmark {
+    color: #e74c3c;
+  }
+  
+  .plan-button {
+    display: block;
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 15px;
+    background-color: #315592;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plan-button:hover {
+    background-color: #faa51b;
+  }
+  
+  .featured .plan-button {
+    background-color: #faa51b;
+  }
+  
+  .featured .plan-button:hover {
+    background-color: #e69417;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .plan-card {
+      width: 90%;
+      max-width: 350px;
+    }
+    
+    .featured {
+      transform: scale(1);
+      order: -1;
+    }
+    
+    .featured:hover {
+      transform: translateY(-10px);
+    }
+  }
